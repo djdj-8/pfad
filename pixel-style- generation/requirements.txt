@@ -1,0 +1,7 @@
+flask
+diffusers
+torch
+PIL
+io
+flask_cors
+os
