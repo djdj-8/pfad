@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A different you</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="video-container">
+        <video id="video" autoplay muted></video>
+        <p>Press “space bar” to take picture</p>
+    </div>
+    <div id="image-container">
+        <img id="styled-image" src="" alt="Styled Image" style="display: none;">
+        <p>Press “q” to save the image</p>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

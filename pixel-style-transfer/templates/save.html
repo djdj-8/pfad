@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Different You</title>
+</head>
+<body>
+    <h1>Save Image</h1>
+    
+    <form action="/save" method="post" enctype="multipart/form-data">
+        <input type="file" id="image" name="image" />
+        <button type="submit">Save</button>
+    </form>
+
+    <script>
+        function saveImage() {
+            const formData = new FormData();
+            formData.append('image', document.getElementById('image').files[0]);
+            
+            fetch('/save', { method: 'post', body: formData })
+                .then(response => response.text())
+                .then(data => console.log(data));
+        }
+    </script>
+</body>
+</html>

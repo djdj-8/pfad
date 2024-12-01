@@ -1,0 +1,41 @@
+/* 确保整个页面居中显示 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 视频容器样式 */
+#video-container {
+  position: relative;
+  width: 50%;
+}
+
+/* 视频样式 */
+#video {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* 图像容器样式 */
+#image-container {
+  position: relative;
+  width: 50%;
+  display: none; /* 默认不显示，直到图像生成 */
+}
+
+/* 生成的图像样式 */
+#styled-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+/* 指示文本样式 */
+p {
+  text-align: center;
+  margin: 10px 0;
+}
